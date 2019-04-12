@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: com.qa.service.repository.RecipeDBRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.097 s <<< FAILURE! - in com.qa.service.repository.RecipeDBRepositoryTest
+testCreateRecipe(com.qa.service.repository.RecipeDBRepositoryTest)  Time elapsed: 0.043 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<{"message": "[movi]e has been sucessful...> but was:<{"message": "[recip]e has been sucessful...>
+	at com.qa.service.repository.RecipeDBRepositoryTest.testCreateRecipe(RecipeDBRepositoryTest.java:70)
+
+testDeleteRecipe(com.qa.service.repository.RecipeDBRepositoryTest)  Time elapsed: 0.003 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<{"message": "[movi]e sucessfully delete...> but was:<{"message": "[recip]e sucessfully delete...>
+	at com.qa.service.repository.RecipeDBRepositoryTest.testDeleteRecipe(RecipeDBRepositoryTest.java:75)
+
+testGetAllMovies(com.qa.service.repository.RecipeDBRepositoryTest)  Time elapsed: 0.004 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...owner":"Chester","de[]cription":"Plain pas...> but was:<...owner":"Chester","de[s]cription":"Plain pas...>
+	at com.qa.service.repository.RecipeDBRepositoryTest.testGetAllMovies(RecipeDBRepositoryTest.java:55)
+
+testCycleRecipes(com.qa.service.repository.RecipeDBRepositoryTest)  Time elapsed: 0.044 s  <<< FAILURE!
+java.lang.AssertionError: expected:<1> but was:<0>
+	at com.qa.service.repository.RecipeDBRepositoryTest.testCycleRecipes(RecipeDBRepositoryTest.java:65)
+
